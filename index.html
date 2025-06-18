@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAD Motors</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>GAD Motors</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="autotuning.html">Авто Тюнинг</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/gad.png" alt="Custom Tuning">
+      <div class="hero-text">
+        <h2>Тюнинг премиум класса</h2>
+        <p>Преобразите свой автомобиль с нашими услугами тюнинга!</p>
+        <button id="orderBtn">Заказать</button>
+      </div>
+    </section>
+
+    <section class="autotuning">
+      <h3>Услуги тюнинга люксовых авто</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/tuning_exterior.png" alt="Внешний тюнинг">
+          <h4>Внешний тюнинг</h4>
+          <p>от 550,000 ₽</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/tuning_interior.png" alt="Тюнинг салона">
+          <h4>Тюнинг салона</h4>
+          <p>от 780,000 ₽</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/tuning_performance.png" alt="Технический тюнинг">
+          <h4>Технический тюнинг</h4>
+          <p>от 1,900,000 ₽</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/tuning_custom.png" alt="Индивидуальный тюнинг">
+          <h4>Индивидуальный тюнинг</h4>
+          <p>Цена по запросу</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <h3>Один из наших проектов:</h3>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/GWdDmcf1xyc" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h3>Отзывы наших клиентов</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">"Сделали пушку-1200HP из тачки" — Евгений</div>
+          <div class="swiper-slide">"Лучшее место для консультации по тюнингу." — Иван</div>
+          <div class="swiper-slide">"Преобразили мой Mercedes-Benz, качество на высоте!" — Мария</div>
+          <div class="swiper-slide">"ТОП - за свои деньги" — Андрей</div>
+          <div class="swiper-slide">"Сумасшедшие мощные двигатели" — Михаил</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="order-form" id="orderForm">
+      <h3>Оформить заказ или запрос на тюнинг</h3>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <select name="order_type" required>
+          <option value="" disabled selected>Выберите тип заказа</option>
+          <option value="tuning">Запрос на тюнинг</option>
+        </select>
+        <textarea name="order" placeholder="Детали заказа или запроса на тюнинг" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GAD Motors. Все права защищены.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
